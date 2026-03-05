@@ -43,7 +43,7 @@ export const CheckoutPage = () => {
   const myOrders = async () => {
     try {
       const useApi = await fetch(
-        `http://localhost:9000/api/shoppingCartProducts/${uId}`,
+        `https://stelina-backend.onrender.com/api/shoppingCartProducts/${uId}`,
         {
           method: "Get",
         },
@@ -91,7 +91,7 @@ export const CheckoutPage = () => {
         totalPrice,
       };
 
-      const useApi = await fetch("http://localhost:9000/api/checkout", {
+      const useApi = await fetch("https://stelina-backend.onrender.com/api/checkout", {
         method: "Post",
         body: JSON.stringify(checkoutInfo),
         headers: {

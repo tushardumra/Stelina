@@ -19,7 +19,7 @@ export const ShopPage = () => {
 
   const showAllProducts = async () => {
     try {
-      const useApi = await fetch("http://localhost:9000/api/allShopProducts", {
+      const useApi = await fetch("https://stelina-backend.onrender.com/api/allShopProducts", {
         method: "Get",
       });
 

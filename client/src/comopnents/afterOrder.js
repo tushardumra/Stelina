@@ -20,7 +20,7 @@ export const AfterOrder = () => {
   const myOrders = async () => {
     try {
       const useApi = await fetch(
-        `http://localhost:9000/api/shoppingCartProducts/${uId}`,
+        `https://stelina-backend.onrender.com/api/shoppingCartProducts/${uId}`,
         {
           method: "Get",
         }
@@ -64,7 +64,7 @@ export const AfterOrder = () => {
   // const afterOrderInfo = async () => {
     
   //   try {
-  //     const useApi = await fetch(`http://localhost:9000/api/getOrderInfo/${uId}`, {
+  //     const useApi = await fetch(`https://stelina-backend.onrender.com/api/getOrderInfo/${uId}`, {
   //       method: "Get"
   //     });
 
@@ -84,7 +84,7 @@ export const AfterOrder = () => {
 
   const deleteCart = async () => {
     try {
-      const useApi =await fetch(`http://localhost:9000/api/deleteCart/${uId}`, {
+      const useApi =await fetch(`https://stelina-backend.onrender.com/api/deleteCart/${uId}`, {
         method: "Delete"
       });
       if(useApi.ok) {

@@ -25,7 +25,7 @@ export const AdminManage = () => {
 
   const ShowUsersLists = async () => {
     try {
-      const useApi = await fetch("http://localhost:9000/api/admin-list", {
+      const useApi = await fetch("https://stelina-backend.onrender.com/api/admin-list", {
         method: "Get",
       });
       if (useApi.ok) {
@@ -50,7 +50,7 @@ export const AdminManage = () => {
     console.log(user)
     try {
       const res = await fetch(
-        `http://localhost:9000/api/toggle-admin/${user._id}`,
+        `https://stelina-backend.onrender.com/api/toggle-admin/${user._id}`,
         { method: "PUT" },
       );
 
@@ -82,7 +82,7 @@ export const AdminManage = () => {
 
   // const ShowCustList = async () => {
   //   try {
-  //     const useApi = await fetch("http://localhost:9000/api/customers-list", {
+  //     const useApi = await fetch("https://stelina-backend.onrender.com/api/customers-list", {
   //       method: "Get"
   //     })
   //     if(useApi.ok) {

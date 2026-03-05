@@ -14,7 +14,7 @@ export const ProductByCategory = () => {
   const showProducts = async () => {
     try {
       const useApi = await fetch(
-        `http://localhost:9000/api/productsList/${pId}`
+        `https://stelina-backend.onrender.com/api/productsList/${pId}`
       );
 
       const resp = await useApi.json();

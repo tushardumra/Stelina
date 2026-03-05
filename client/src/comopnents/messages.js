@@ -9,7 +9,7 @@ export const Messages = () => {
 
   const ShowMessages = async () => {
     try {
-      const useApi = await fetch("http://localhost:9000/api/showing-messages", {
+      const useApi = await fetch("https://stelina-backend.onrender.com/api/showing-messages", {
         method: "Get"
       });
 

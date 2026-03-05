@@ -13,7 +13,7 @@ export const SignUpPage = () => {
   const register = async (e)=> {
     e.preventDefault()
     const userinfo = {mailId, uname, phone, pwd};
-    const useApi = await fetch("http://localhost:9000/api/signup", {
+    const useApi = await fetch("https://stelina-backend.onrender.com/api/signup", {
       method: "Post",
       body: JSON.stringify(userinfo),
       headers: {
