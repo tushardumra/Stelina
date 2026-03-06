@@ -24,9 +24,5 @@ Thumbs.db
 .vscode/
 .idea/
 
-# uploaded files
-client/public/assets/uploadCategories
-client/public/assets/uploadProducts
-
 # cache
 .cache/
