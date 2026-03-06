@@ -13,8 +13,8 @@ pnpm-debug.log*
 build/
 dist/
 
-# React build output
-client/build/
+# # React build output
+# client/buil
 
 # OS files
 .DS_Store
