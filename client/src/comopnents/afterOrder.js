@@ -88,10 +88,10 @@ export const AfterOrder = () => {
         method: "Delete"
       });
       if(useApi.ok) {
-        alert('working') 
+        // alert('working') 
         const resp = await useApi.json();
         if(resp.statuscode === 1) {
-          alert("your whole cart is delete")
+          alert("Thank you for shopping from us")
           
         } else {
           alert("error in deleting your whole cart");
